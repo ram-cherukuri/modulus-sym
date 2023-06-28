@@ -21,17 +21,19 @@
 
 ### General Instructions for adding examples
 1. Organizing your code and artifacts as follows:
-    1. Put the following scripts in Modulus-Core as applicable:
+    1. Create a new folder with appropriate name in Modulus-Core and Modulus-Sym under the examples folder
+    2. Place the following scripts in your folder Modulus-Core as applicable:
         - Network.py 
         - Utils.py
         - Dataloader.py
-    2. Training/validation/inference scripts and the relevant utilities go to Modulus-Launch.I suggest putting these scripts in Modulus-Launch:
+    3. Training/validation/inference scripts and the relevant utilities go to Modulus-Sym. Place these scripts in Modulus-Sym:
         - Train.py
         - Infer.py
         - Test.py
+    4. Please add documentation with all your plots and animations as a README.md file in Modulus_launch. Modulus documentation is being refactored and we will migrate your documentation to Modulus documentation once ready.
 
 2. Per the contributing document: 
-    1. Make forks of Modulus-Core and Modulus-Launch/ Modulus-Sym
+    1. Make forks of Modulus-Core and Modulus-Sym
     2. Push your code to your forks
     3. Once ready, open an PR to the upstream branches
     4. Make sure you prepare your code according to the CI requirements. That includes unit tests and code coverage, docstrings, black formatting, and doctests.
@@ -40,7 +42,6 @@
 
 4. Please make sure your dependencies and any of the sub-dependencies are not touching GPL or L-GPL code. In some cases, we might be able to clear a code that touches L-GPL code but there are hard restrictions on GPL code.
 
-5. Please add documentation with all your plots and animations as a README.md file in Modulus_launch. Modulus documentation is being refactored and we will migrate your documentation to Modulus documentation once ready.
 
 ### Licensing information
 All source code files should start with this paragraph:
@@ -102,3 +103,4 @@ All source code files should start with this paragraph:
     (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
     
 ### CI
+Coming soon
